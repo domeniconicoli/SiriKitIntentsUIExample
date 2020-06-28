@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		798DA98424A84A6F0086B3A4 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 798DA98324A84A6F0086B3A4 /* Intents.intentdefinition */; };
 		F5E0441823848E670073E2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E0441723848E670073E2ED /* AppDelegate.swift */; };
 		F5E0441A23848E670073E2ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E0441923848E670073E2ED /* SceneDelegate.swift */; };
 		F5E0441C23848E670073E2ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E0441B23848E670073E2ED /* ViewController.swift */; };
@@ -15,7 +16,27 @@
 		F5E0442423848E680073E2ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E0442223848E680073E2ED /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		798DA97C24A84A570086B3A4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		798DA96424A84A570086B3A4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		798DA96624A84A570086B3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798DA96D24A84A570086B3A4 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		798DA97024A84A570086B3A4 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		798DA97324A84A570086B3A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		798DA97524A84A570086B3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798DA98324A84A6F0086B3A4 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		F5E0441423848E670073E2ED /* SiriKitIntentsUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitIntentsUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E0441723848E670073E2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5E0441923848E670073E2ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,10 +58,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		798DA96324A84A570086B3A4 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				798DA96424A84A570086B3A4 /* IntentHandler.swift */,
+				798DA96624A84A570086B3A4 /* Info.plist */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		798DA96C24A84A570086B3A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798DA96D24A84A570086B3A4 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		798DA96F24A84A570086B3A4 /* IntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				798DA97024A84A570086B3A4 /* IntentViewController.swift */,
+				798DA97224A84A570086B3A4 /* MainInterface.storyboard */,
+				798DA97524A84A570086B3A4 /* Info.plist */,
+			);
+			path = IntentsUI;
+			sourceTree = "<group>";
+		};
 		F5E0440B23848E660073E2ED = {
 			isa = PBXGroup;
 			children = (
 				F5E0441623848E670073E2ED /* SiriKitIntentsUIExample */,
+				798DA96324A84A570086B3A4 /* Intents */,
+				798DA96F24A84A570086B3A4 /* IntentsUI */,
+				798DA96C24A84A570086B3A4 /* Frameworks */,
 				F5E0441523848E670073E2ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +114,7 @@
 				F5E0442023848E680073E2ED /* Assets.xcassets */,
 				F5E0442223848E680073E2ED /* LaunchScreen.storyboard */,
 				F5E0442523848E680073E2ED /* Info.plist */,
+				798DA98324A84A6F0086B3A4 /* Intents.intentdefinition */,
 			);
 			path = SiriKitIntentsUIExample;
 			sourceTree = "<group>";
@@ -77,6 +129,7 @@
 				F5E0441023848E660073E2ED /* Sources */,
 				F5E0441123848E660073E2ED /* Frameworks */,
 				F5E0441223848E660073E2ED /* Resources */,
+				798DA97C24A84A570086B3A4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -93,7 +146,7 @@
 		F5E0440C23848E660073E2ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Domo;
 				TargetAttributes = {
@@ -140,6 +193,7 @@
 			files = (
 				F5E0441C23848E670073E2ED /* ViewController.swift in Sources */,
 				F5E0441823848E670073E2ED /* AppDelegate.swift in Sources */,
+				798DA98424A84A6F0086B3A4 /* Intents.intentdefinition in Sources */,
 				F5E0441A23848E670073E2ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +201,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		798DA97224A84A570086B3A4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798DA97324A84A570086B3A4 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		F5E0441D23848E670073E2ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,15 +345,16 @@
 		F5E0442923848E680073E2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89D52653SY;
+				DEVELOPMENT_TEAM = RGZATX49X6;
 				INFOPLIST_FILE = SiriKitIntentsUIExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mediumproject.SiriKitIntentsUIExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itxu.siri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,15 +364,16 @@
 		F5E0442A23848E680073E2ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89D52653SY;
+				DEVELOPMENT_TEAM = RGZATX49X6;
 				INFOPLIST_FILE = SiriKitIntentsUIExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mediumproject.SiriKitIntentsUIExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itxu.siri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
