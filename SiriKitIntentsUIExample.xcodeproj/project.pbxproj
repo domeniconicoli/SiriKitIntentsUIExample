@@ -13,6 +13,7 @@
 		F5E0441F23848E670073E2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E0441D23848E670073E2ED /* Main.storyboard */; };
 		F5E0442123848E680073E2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E0442023848E680073E2ED /* Assets.xcassets */; };
 		F5E0442423848E680073E2ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E0442223848E680073E2ED /* LaunchScreen.storyboard */; };
+		F5E0442C23848EBB0073E2ED /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F5E0442B23848EBB0073E2ED /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		F5E0442023848E680073E2ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E0442323848E680073E2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5E0442523848E680073E2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E0442B23848EBB0073E2ED /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		F5E0442D238492480073E2ED /* SiriKitIntentsUIExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitIntentsUIExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		F5E0441623848E670073E2ED /* SiriKitIntentsUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				F5E0442D238492480073E2ED /* SiriKitIntentsUIExample.entitlements */,
 				F5E0441723848E670073E2ED /* AppDelegate.swift */,
 				F5E0441923848E670073E2ED /* SceneDelegate.swift */,
 				F5E0441B23848E670073E2ED /* ViewController.swift */,
@@ -63,6 +67,7 @@
 				F5E0442023848E680073E2ED /* Assets.xcassets */,
 				F5E0442223848E680073E2ED /* LaunchScreen.storyboard */,
 				F5E0442523848E680073E2ED /* Info.plist */,
+				F5E0442B23848EBB0073E2ED /* Intents.intentdefinition */,
 			);
 			path = SiriKitIntentsUIExample;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			files = (
 				F5E0441C23848E670073E2ED /* ViewController.swift in Sources */,
 				F5E0441823848E670073E2ED /* AppDelegate.swift in Sources */,
+				F5E0442C23848EBB0073E2ED /* Intents.intentdefinition in Sources */,
 				F5E0441A23848E670073E2ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitIntentsUIExample/SiriKitIntentsUIExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89D52653SY;
 				INFOPLIST_FILE = SiriKitIntentsUIExample/Info.plist;
@@ -302,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitIntentsUIExample/SiriKitIntentsUIExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89D52653SY;
 				INFOPLIST_FILE = SiriKitIntentsUIExample/Info.plist;
