@@ -5,15 +5,15 @@
 	<key>INEnums</key>
 	<array/>
 	<key>INIntentDefinitionModelVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>INIntentDefinitionNamespace</key>
 	<string>7X35e2</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>19B88</string>
+	<string>21G115</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>11B500</string>
+	<string>14A400</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>11.2.1</string>
+	<string>14.0.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -31,6 +31,10 @@
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>No parameters</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>3kxT5d</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
 					<true/>
 				</dict>
@@ -45,6 +49,10 @@
 					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>No parameters</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>owWGtk</string>
 				</dict>
 			</dict>
 			<key>INIntentResponse</key>
